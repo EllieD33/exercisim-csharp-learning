@@ -7,6 +7,6 @@ static class Badge
         string idString = id == null ? "" : $"[{id}] - ";
         string departmentString = department == null ? "OWNER" :  $"{department.ToUpper()}";
 
-        return idString + name + " - " + departmentString;
+        return $"{idString}{name} - {departmentString}";
     }
 }
